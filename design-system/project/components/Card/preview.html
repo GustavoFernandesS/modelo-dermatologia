@@ -1,0 +1,51 @@
+<!-- @dsCard group="Conteúdo" height=640 subtitle="Ficha de tratamento e depoimento" -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Cards</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+  body { margin:0; background:var(--papel); color:var(--cacau-900); font-family:var(--font-sans); }
+  .grid { display:flex; flex-wrap:wrap; gap:var(--espaco-48); padding:var(--espaco-24); align-items:flex-start; }
+  .rot { font:600 12px/16px var(--font-sans); letter-spacing:.12em; text-transform:uppercase; }
+  /* Ficha */
+  .ficha { width:360px; max-width:100%; box-sizing:border-box; background:var(--branco); border:1px solid var(--linha); border-radius:var(--raio-4); padding:var(--espaco-24); display:flex; flex-direction:column; gap:var(--espaco-16); }
+  .head { display:flex; justify-content:space-between; }
+  .head .n { color:var(--malva-600); } .head .c { color:var(--cacau-600); }
+  .foto { aspect-ratio:4 / 3; max-width:100%; background:var(--nude-100); border-radius:var(--raio-4); display:flex; align-items:flex-end; padding:12px; box-sizing:border-box; font:400 14px/21px var(--font-sans); color:var(--cacau-600); }
+  .ficha h3 { margin:0; font:400 30px/34px var(--font-serif); }
+  .ficha p { margin:0; font:400 16px/26px var(--font-sans); color:var(--cacau-600); }
+  .rows div { display:flex; justify-content:space-between; gap:var(--espaco-16); padding:8px 0; border-top:1px solid var(--linha); font:400 14px/21px var(--font-sans); color:var(--cacau-600); }
+  .rows b { font-weight:400; color:var(--cacau-900); text-align:right; }
+  .link { display:inline-flex; align-items:center; gap:6px; min-height:48px; font:500 15px/20px var(--font-sans); color:var(--azul-carimbo); text-decoration:underline; text-underline-offset:4px; }
+  .link svg { width:16px; height:16px; }
+  /* Depoimento */
+  .dep { width:420px; max-width:100%; box-sizing:border-box; background:var(--nude-100); border-radius:var(--raio-4); padding:40px var(--espaco-32) var(--espaco-32); display:flex; flex-direction:column; gap:20px; }
+  .nota { display:flex; align-items:center; gap:8px; font:500 14px/21px var(--font-sans); }
+  .nota span { color:var(--estrela); letter-spacing:.1em; }
+  blockquote { margin:0; font:italic 400 26px/34px var(--font-serif); }
+  .who { font:400 14px/21px var(--font-sans); color:var(--cacau-600); }
+</style>
+</head>
+<body>
+<div class="grid">
+  <article class="ficha">
+    <div class="head"><span class="rot n">Nº 02</span><span class="rot c">Estética facial</span></div>
+    <div class="foto">foto: detalhe de pele, luz natural</div>
+    <h3>Manchas e melasma</h3>
+    <p>Investigação da causa e um plano que combina cuidados em casa e procedimentos no consultório.</p>
+    <div class="rows">
+      <div>Indicação <b>manchas, melasma, rosácea</b></div>
+      <div>Atendimento <b>presencial e on-line</b></div>
+    </div>
+    <a class="link" href="#agendar">Agendar avaliação <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg></a>
+  </article>
+  <article class="dep">
+    <div class="nota"><span aria-hidden="true">★★★★★</span> 5,0 no Google</div>
+    <blockquote>“Médica atenciosa e humana, muito correta em tudo que faz.”</blockquote>
+    <div class="who">Paciente · avaliação no Google</div>
+  </article>
+</div>
+</body>
+</html>

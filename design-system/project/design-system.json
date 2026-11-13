@@ -1,0 +1,24 @@
+{
+  "v": 3,
+  "assetGroups": {},
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-11-04T14:30:00Z",
+    "v": 1
+  },
+  "docs": {
+    "sections": []
+  },
+  "groups": [],
+  "lastChange": {
+    "at": "2026-11-04T16:00:00Z",
+    "by": "Gustavo Fernandes",
+    "note": "Direção 'Receituário e carimbo' aprovada no Figma: malva + azul-carimbo, Albert Sans + Instrument Serif + Caveat, componente Carimbo.",
+    "via": "Claude Code"
+  },
+  "layout": "files",
+  "libraries": [],
+  "namespace": "HelenaVasconcelos",
+  "sections": {},
+  "title": "Helena Vasconcelos Dermatologia"
+}

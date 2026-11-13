@@ -1,0 +1,55 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Helena Vasconcelos Dermatologia</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap">
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--papel); color:var(--cacau-900); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; width:960px; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:288px; }
+  .malva { fill:var(--malva-600); }
+  .cacau { fill:var(--cacau-900); }
+  .nude { fill:var(--nude-300); }
+  .blk { rx:var(--raio-4); }
+  .regua { stroke:var(--nude-300); stroke-width:1; stroke-dasharray:3 4; opacity:.6; }
+  .tinta { fill:none; stroke:var(--azul-carimbo); }
+  .words { position:absolute; left:var(--espaco-32); bottom:var(--espaco-32); max-width:440px; }
+  .name { margin:0; font-weight:300; font-size:60px; line-height:.95; letter-spacing:-.02em; color:var(--cacau-900); }
+  .tag { margin:var(--espaco-12) 0 0 2px; font-size:14px; line-height:20px; color:var(--cacau-600); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      malva-600 176×232 bled off the top (the brand colour), cacau-900 280×232 bled off the right and bottom (the dark hero photo), nude-300 176×48 bled off the bottom — about 37% of 960×288
+  arrangement one tall malva slab beside the dark photo block, offset down by espaco-64, like the reference hero beside its text column
+  pattern     literal motif row: the receituário — 5 dashed ruled lines in nude-300 at an espaco-24 pitch across the dark block — plus one doctor's stamp outline (double border, azul-carimbo) tilted -5° across the malva edge, as the README places it
+  scales      gutters espaco-16, rule pitch espaco-24, offset espaco-64; corners raio-4 on blocks, raio-0 on the stamp
+-->
+<rect class="malva blk" x="24" y="-8" width="176" height="232" rx="4"/>
+<rect class="cacau blk" x="216" y="64" width="280" height="240" rx="4"/>
+<rect class="nude blk" x="24" y="240" width="176" height="56" rx="4"/>
+<line class="regua" x1="248" y1="112" x2="480" y2="112"/>
+<line class="regua" x1="248" y1="136" x2="480" y2="136"/>
+<line class="regua" x1="248" y1="160" x2="480" y2="160"/>
+<line class="regua" x1="248" y1="184" x2="480" y2="184"/>
+<line class="regua" x1="248" y1="208" x2="480" y2="208"/>
+<g transform="rotate(-5 110 40)">
+  <rect class="tinta" x="40" y="10" width="148" height="56" stroke-width="2.5"/>
+  <rect class="tinta" x="45" y="15" width="138" height="46" stroke-width="1"/>
+</g>
+</svg>
+</div>
+<div class="words">
+  <h1 class="name">Helena Vasconcelos<br>Dermatologia</h1>
+  <p class="tag">Receituário, carimbo e pele. Campinas e Valinhos, MG.</p>
+</div>
+</div>
+</body>
+</html>

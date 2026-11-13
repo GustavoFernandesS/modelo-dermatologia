@@ -1,0 +1,40 @@
+<!-- @dsCard group="Ações" height=200 subtitle="Primário, secundário, link e estados" -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Botão</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500;600&display=swap">
+<style>
+  body { margin:0; background:var(--papel); color:var(--cacau-900); font-family:var(--font-sans); }
+  .wrap { display:flex; flex-direction:column; gap:var(--espaco-24); padding:var(--espaco-24); }
+  .row { display:flex; flex-wrap:wrap; align-items:center; gap:var(--espaco-24); }
+  .lbl { width:100%; font:600 12px/16px var(--font-sans); letter-spacing:.12em; text-transform:uppercase; color:var(--cacau-600); }
+  .btn { display:inline-flex; align-items:center; gap:var(--espaco-12); min-height:56px; padding:0 24px 0 28px; border-radius:var(--raio-2); font:500 15px/20px var(--font-sans); letter-spacing:.02em; border:1px solid transparent; cursor:pointer; text-decoration:none; transition:background .16s; }
+  .btn svg { width:16px; height:16px; }
+  .primary { background:var(--malva-600); color:var(--branco); }
+  .primary:hover, .primary.is-hover { background:var(--malva-800); }
+  .secondary { background:transparent; color:var(--cacau-900); border-color:var(--cacau-900); }
+  .secondary:hover { background:var(--nude-100); }
+  .btn:focus-visible, .is-focus { outline:none; box-shadow:var(--foco); }
+  .link { font:500 15px/20px var(--font-sans); color:var(--azul-carimbo); text-decoration:underline; text-underline-offset:4px; min-height:48px; display:inline-flex; align-items:center; }
+  .link:hover { color:var(--cacau-900); }
+  @media (prefers-reduced-motion: reduce) { .btn { transition:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="row">
+    <span class="lbl">Variantes</span>
+    <button class="btn primary" type="button">Agendar consulta <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg></button>
+    <button class="btn secondary" type="button">Ver tratamentos <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg></button>
+    <a class="link" href="#whatsapp">ou fale pelo WhatsApp</a>
+  </div>
+  <div class="row">
+    <span class="lbl">Estados do primário</span>
+    <button class="btn primary is-hover" type="button">Hover</button>
+    <button class="btn primary is-focus" type="button">Foco</button>
+  </div>
+</div>
+</body>
+</html>

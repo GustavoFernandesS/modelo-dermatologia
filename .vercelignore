@@ -1,0 +1,6 @@
+.env*
+.gitignore
+.claude
+design-system
+README.md
+CREDITOS.md

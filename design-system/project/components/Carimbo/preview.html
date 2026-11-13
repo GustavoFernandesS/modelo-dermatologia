@@ -1,0 +1,33 @@
+<!-- @dsCard group="Marca" height=200 subtitle="Carimbo médico, assinatura da marca" -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Carimbo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;600&display=swap">
+<style>
+  body { margin:0; background:var(--papel); font-family:var(--font-sans); }
+  .wrap { display:flex; flex-wrap:wrap; align-items:center; gap:var(--espaco-48); padding:var(--espaco-32) var(--espaco-48); }
+  .carimbo { display:inline-block; padding:4px; border:2.5px solid var(--azul-carimbo); color:var(--azul-carimbo); opacity:.9; transform:rotate(-5deg); }
+  .carimbo div { border:1px solid var(--azul-carimbo); padding:12px 20px; text-align:center; display:flex; flex-direction:column; gap:2px; }
+  .nome { font:600 15px/21px var(--font-sans); letter-spacing:.04em; text-transform:uppercase; }
+  .esp { font:400 14px/21px var(--font-sans); }
+  .reg { font:600 12px/16px var(--font-sans); letter-spacing:.12em; }
+  .assin { position:relative; width:320px; max-width:100%; height:120px; }
+  .assin .linha { position:absolute; right:0; bottom:28px; width:220px; border-top:1px solid var(--cacau-900); }
+  .assin .quem { position:absolute; right:0; bottom:4px; width:220px; font:400 14px/21px var(--font-sans); color:var(--cacau-600); }
+  .assin .carimbo { position:absolute; left:0; top:4px; transform:rotate(-4deg) scale(.8); transform-origin:left top; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="carimbo" role="img" aria-label="Carimbo: Dra. Helena Vasconcelos, médica dermatologista, CRM-SP 000000, RQE 00000">
+    <div><span class="nome">Dra. Helena Vasconcelos</span><span class="esp">Médica dermatologista</span><span class="reg">CRM-SP 000000 · RQE 00000</span></div>
+  </div>
+  <div class="assin" aria-hidden="true">
+    <div class="carimbo"><div><span class="nome">Dra. Helena Vasconcelos</span><span class="esp">Médica dermatologista</span><span class="reg">CRM-SP 000000 · RQE 00000</span></div></div>
+    <div class="linha"></div><div class="quem">Dra. Helena Vasconcelos</div>
+  </div>
+</div>
+</body>
+</html>

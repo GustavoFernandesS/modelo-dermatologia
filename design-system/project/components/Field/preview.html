@@ -1,0 +1,43 @@
+<!-- @dsCard group="Formulário" height=200 subtitle="Padrão, foco e erro" -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Campo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400&family=Instrument+Serif:ital@1&display=swap">
+<style>
+  body { margin:0; background:var(--papel); color:var(--cacau-900); font-family:var(--font-sans); }
+  form { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:var(--espaco-24) var(--espaco-32); padding:var(--espaco-24); }
+  .field { display:flex; flex-direction:column; gap:var(--espaco-8); min-width:0; }
+  label { font:italic 400 20px/24px var(--font-serif); color:var(--cacau-900); }
+  .input { height:52px; padding:0 var(--espaco-16); background:var(--branco); border:1px solid var(--cacau-600); border-radius:var(--raio-2); font:400 16px/26px var(--font-sans); color:var(--cacau-900); }
+  .input:focus, .input.is-focus { outline:none; border:1.5px solid var(--azul-carimbo); box-shadow:var(--foco); }
+  .help { margin:0; font:400 14px/21px var(--font-sans); color:var(--cacau-600); }
+  .is-error .input { border:1.5px solid var(--erro); }
+  .is-error .help { color:var(--erro); }
+</style>
+</head>
+<body>
+<form novalidate onsubmit="return false">
+  <div class="field">
+    <label for="ds-nome">Como podemos te chamar?</label>
+    <input class="input" id="ds-nome" type="text" autocomplete="name" value="Mariana Souza">
+    <p class="help">Só o primeiro nome já basta.</p>
+  </div>
+  <div class="field">
+    <label for="ds-unidade">Onde prefere ser atendida(o)?</label>
+    <select class="input is-focus" id="ds-unidade">
+      <option>Campinas (presencial)</option>
+      <option>Valinhos (presencial)</option>
+      <option>Consulta on-line</option>
+    </select>
+    <p class="help">Presencial ou on-line, a consulta é a mesma.</p>
+  </div>
+  <div class="field is-error">
+    <label for="ds-whats">Seu WhatsApp</label>
+    <input class="input" id="ds-whats" type="tel" inputmode="tel" autocomplete="tel" value="(19) 9000" aria-invalid="true" aria-describedby="ds-whats-err">
+    <p class="help" id="ds-whats-err">Faltam números. Use DDD + 9 dígitos.</p>
+  </div>
+</form>
+</body>
+</html>
