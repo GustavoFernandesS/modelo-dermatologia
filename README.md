@@ -1,6 +1,6 @@
 # Modelo de site · Dermatologia
 
-Landing page demonstrativa da [Codetrax](https://codetraxgf.com) para um consultório de dermatologia. A marca "Dra. Helena Vasconcelos", os registros (CRM/RQE), o endereço e os depoimentos são **fictícios**. As fotos são do Unsplash ([CREDITOS.md](CREDITOS.md)).
+Landing page demonstrativa da [Codetrax](https://codetraxgs.com) para um consultório de dermatologia. A marca "Dra. Helena Vasconcelos", os registros (CRM/RQE), o endereço e os depoimentos são **fictícios**. As fotos são do Unsplash ([CREDITOS.md](CREDITOS.md)).
 
 Todos os botões de WhatsApp e o formulário abrem uma conversa com a Codetrax, para que nenhum número fictício caia no WhatsApp de uma pessoa real.
 
