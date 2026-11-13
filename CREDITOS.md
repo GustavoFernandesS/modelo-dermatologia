@@ -6,7 +6,7 @@ As pessoas nas fotos **não** são a "Dra. Helena Vasconcelos" nem pacientes rea
 
 | Arquivo | Foto | Fotógrafo |
 |---|---|---|
-| `img/hero-folhas.webp` | [unsplash.com/photos/mSK5nNsAsLY](https://unsplash.com/photos/mSK5nNsAsLY) | Gilles Lambert |
+| `img/hero-folhas.webp` | Foto de banco de imagem pública, a mesma do layout original | — |
 | `img/dra-helena-retrato.webp` | [unsplash.com/photos/2G73aoMR-Go](https://unsplash.com/photos/2G73aoMR-Go) | Ike Ellyana |
 | `img/card-consulta.webp` | [unsplash.com/photos/MJmsLpeHPfg](https://unsplash.com/photos/MJmsLpeHPfg) | Vitaly Gariev |
 | `img/ficha-acne.webp` | [unsplash.com/photos/e7jpGYe7OtU](https://unsplash.com/photos/e7jpGYe7OtU) | Fleur Kaan |
